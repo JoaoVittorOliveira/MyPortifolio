@@ -1,0 +1,72 @@
+/* Estrutura de colunas (Mantemos a consistência) */
+.split-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  align-items: flex-start;
+}
+
+.section-title-col {
+  flex: 0 0 250px;
+}
+
+.section-title-col h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #111;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.section-content-col {
+  flex: 1;
+}
+
+/* Grelha de Metodologia */
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 4rem;
+  row-gap: 3rem;
+  max-width: 1000px;
+}
+
+.approach-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.approach-num {
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  margin-top: 0.2rem;
+}
+
+.approach-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.approach-item strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .split-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .section-title-col {
+    flex: none;
+    width: 100%;
+  }
+  .approach-grid {
+    column-gap: 2rem;
+  }
+}
