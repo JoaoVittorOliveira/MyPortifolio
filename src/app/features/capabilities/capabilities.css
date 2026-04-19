@@ -1,0 +1,59 @@
+/* Estrutura de colunas */
+.split-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  align-items: flex-start;
+}
+
+.section-title-col {
+  flex: 0 0 250px;
+}
+
+.section-title-col h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #111;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.section-content-col {
+  flex: 1;
+}
+
+/* Específicos das pílulas (Capabilities) */
+.capabilities-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.pill {
+  border: 1px solid #d1d5db;
+  border-radius: 50px;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  color: #555;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.pill:hover {
+  border-color: #111;
+  color: #111;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .split-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .section-title-col {
+    flex: none;
+    width: 100%;
+  }
+}

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Hero } from './features/hero/hero';
 import { Projects } from './features/projects/projects';
 import { About } from './features/about/about';
+import { Capabilities } from './features/capabilities/capabilities';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Hero, Projects, About],
+  imports: [CommonModule, Hero, Projects, About, Capabilities],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
