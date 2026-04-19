@@ -1,0 +1,50 @@
+.about-section {
+  display: flex;
+  gap: 5rem;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.photo-placeholder {
+  flex-shrink: 0;
+  width: 380px;
+  height: 450px;
+  border-radius: 30px;
+}
+
+.about-content {
+  max-width: 600px;
+  padding-top: 1rem;
+}
+
+.about-content h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.red-block {
+  background-color: #ff4444;
+}
+
+/* Responsividade específica da seção About */
+@media (max-width: 900px) {
+  .about-section { 
+    flex-direction: column; 
+    gap: 3rem; 
+  }
+  .photo-placeholder { 
+    width: 100%; 
+    height: 400px; 
+  }
+}
