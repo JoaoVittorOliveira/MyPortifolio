@@ -5,11 +5,12 @@ import { Projects } from './features/projects/projects';
 import { About } from './features/about/about';
 import { Capabilities } from './features/capabilities/capabilities';
 import { Approach } from './features/approach/approach';
+import { Testimonials } from './features/testimonials/testimonials';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Hero, Projects, About, Capabilities, Approach],
+  imports: [CommonModule, Hero, Projects, About, Capabilities, Approach, Testimonials],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
