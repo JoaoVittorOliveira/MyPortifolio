@@ -6,11 +6,12 @@ import { About } from './features/about/about';
 import { Capabilities } from './features/capabilities/capabilities';
 import { Approach } from './features/approach/approach';
 import { Testimonials } from './features/testimonials/testimonials';
+import { Contact } from './features/contact/contact';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Hero, Projects, About, Capabilities, Approach, Testimonials],
+  imports: [CommonModule, Hero, Projects, About, Capabilities, Approach, Testimonials, Contact],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
