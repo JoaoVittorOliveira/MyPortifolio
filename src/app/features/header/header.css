@@ -1,0 +1,51 @@
+/* Removemos o flex do container principal para que os itens fiquem independentes */
+.global-header {
+  /* Não precisa de propriedades aqui por enquanto */
+}
+
+/* O nome fica com position: absolute para ficar no topo do documento */
+.logo-name {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  color: #888888;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  z-index: 100; /* Garante que fique acima de outros textos */
+}
+
+.logo-name:hover {
+  color: #111111;
+}
+
+/* O botão fica com position: fixed para "descer" com a tela */
+.menu-btn {
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  z-index: 100; /* Um z-index bem alto para flutuar acima de TODAS as fotos e textos do projeto */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f7f7f8;
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #111;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.05); /* Efeito tátil suave */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 900px) {
+  .logo-name { left: 2rem; }
+  .menu-btn { right: 2rem; }
+}

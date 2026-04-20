@@ -10,7 +10,7 @@
 }
 
 .massive-title {
-  font-size: clamp(4rem, 10vw, 8rem); /* Responsivo e GIGANTE */
+  font-size: clamp(8rem, 20vw, 16rem); /* Responsivo e GIGANTE */
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
