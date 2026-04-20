@@ -1,5 +1,3 @@
-// src/app/models/project.model.ts
-
 export interface ProjectSection {
   type: 'text' | 'image' | 'text-image'; // Define o layout da seção na página de detalhes
   title?: string;

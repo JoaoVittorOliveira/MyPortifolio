@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Hero } from './features/hero/hero';
-import { Projects } from './features/projects/projects';
+import { ProjectsComponent } from './features/projects/projects';
 import { About } from './features/about/about';
 import { Capabilities } from './features/capabilities/capabilities';
 import { Approach } from './features/approach/approach';
@@ -11,7 +11,7 @@ import { Contact } from './features/contact/contact';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, Hero, Projects, About, Capabilities, Approach, Testimonials, Contact],
+  imports: [CommonModule, Hero, ProjectsComponent, About, Capabilities, Approach, Testimonials, Contact],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

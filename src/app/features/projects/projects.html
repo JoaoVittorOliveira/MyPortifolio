@@ -1,8 +1,18 @@
 <section class="projects-section">
   <div class="projects-grid">
-    <div class="red-block project-placeholder"></div>
-    <div class="red-block project-placeholder"></div>
-    <div class="red-block project-placeholder"></div>
-    <div class="red-block project-placeholder"></div>
+    
+    @for (project of myProjects; track project.slug) {
+      <div class="project-card">
+        <div class="card-image-wrapper">
+          <img [src]="project.cardImageUrl" [alt]="project.title" class="card-img">
+        </div>
+        
+        <div class="card-info">
+          <h4>{{ project.title }}</h4>
+          <p>{{ project.shortDescription }}</p>
+        </div>
+      </div>
+    }
+
   </div>
 </section>
