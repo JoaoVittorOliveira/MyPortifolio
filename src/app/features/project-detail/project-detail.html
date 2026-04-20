@@ -1,0 +1,95 @@
+@if (project) {
+<article class="project-detail-page">
+  
+  <header class="detail-header">
+    <h1 class="massive-title">{{ project.title }}</h1>
+    
+    <div class="meta-grid">
+      <div class="intro-column">
+        <p class="hero-description">{{ project.heroDescription }}</p>
+      </div>
+      
+      <div class="info-column">
+        <div class="info-block">
+          <span class="info-label">SERVICES</span>
+          <div class="pill-group">
+            @for (role of project.roles; track role) {
+              <span class="pill">{{ role }}</span>
+            }
+          </div>
+        </div>
+        <div class="info-block">
+          <span class="info-label">STACK</span>
+          <div class="pill-group">
+            @for (tech of project.technologies; track tech) {
+              <span class="pill">{{ tech }}</span>
+            }
+          </div>
+        </div>
+        <div class="info-block">
+          <span class="info-label">DATE</span>
+          <p class="info-text">{{ project.date }}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-image-wrapper">
+    <img [src]="project.heroImageUrl" [alt]="project.title" class="full-width-image">
+  </div>
+
+  <div class="dynamic-sections">
+    @for (section of project.sections; track $index) {
+      
+      @if (section.type === 'text-only') {
+        <section class="section-layout layout-text-only">
+          <div class="text-content-centered">
+            @if (section.title) { <h2>{{ section.title }}</h2> }
+            <p>{{ section.content }}</p>
+          </div>
+        </section>
+      }
+
+      @if (section.type === 'image-full') {
+        <section class="section-layout layout-full-image">
+          <img [src]="section.imageUrl" alt="Project detail image" class="full-width-image">
+        </section>
+      }
+
+      @if (section.type === 'text-left-image-right' || section.type === 'text-right-image-left') {
+        <section class="section-layout layout-side-by-side" 
+                 [class.reverse]="section.type === 'text-right-image-left'">
+          
+          <div class="side-text">
+            @if (section.title) { <h2>{{ section.title }}</h2> }
+            <p>{{ section.content }}</p>
+          </div>
+          
+          <div class="side-image">
+            <img [src]="section.imageUrl" alt="" class="rounded-image">
+          </div>
+        </section>
+      }
+
+      @if (section.type === 'gallery' && section.galleryUrls) {
+        <section class="section-layout layout-gallery">
+          @for (img of section.galleryUrls; track $index) {
+            <img [src]="img" alt="Gallery item" class="rounded-image">
+          }
+        </section>
+      }
+
+    }
+  </div>
+
+  <footer class="project-footer">
+    <a routerLink="/" class="back-link">← Back to Portfolio</a>
+  </footer>
+
+</article>
+} @else {
+  <div class="not-found">
+    <h2>Projeto não encontrado.</h2>
+    <a routerLink="/">Voltar para a Home</a>
+  </div>
+}

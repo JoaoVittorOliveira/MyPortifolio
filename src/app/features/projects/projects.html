@@ -2,7 +2,7 @@
   <div class="projects-grid">
     
     @for (project of myProjects; track project.slug) {
-      <div class="project-card">
+      <div class="project-card " [routerLink]="['/project', project.slug]">
         <div class="card-image-wrapper">
           <img [src]="project.cardImageUrl" [alt]="project.title" class="card-img">
         </div>

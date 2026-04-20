@@ -1,0 +1,178 @@
+.project-detail-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 4rem 10rem 4rem;
+}
+
+/* --- CABEÇALHO --- */
+.detail-header {
+  margin-bottom: 4rem;
+}
+
+.massive-title {
+  font-size: clamp(4rem, 10vw, 8rem); /* Responsivo e GIGANTE */
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0 0 4rem 0;
+  color: #111;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Coluna de Meta Informações */
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: 80px; /* Alinha labels */
+  flex-shrink: 0;
+  padding-top: 0.5rem;
+}
+
+.info-text {
+  margin: 0;
+  padding-top: 0.3rem;
+  font-size: 1rem;
+  color: #111;
+}
+
+/* Pills (Bolinhas do Serviços/Stack) */
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: #111;
+  background-color: transparent;
+}
+
+/* --- IMAGENS --- */
+.hero-image-wrapper {
+  margin-bottom: 6rem;
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px; /* O cantinho arredondado igual a referência */
+  display: block;
+}
+
+.rounded-image {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+  object-fit: cover;
+}
+
+/* --- SEÇÕES DINÂMICAS --- */
+.dynamic-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem; /* Espaço gigante entre as seções */
+}
+
+.section-layout h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  color: #111;
+}
+
+.section-layout p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Text Only */
+.layout-text-only .text-content-centered {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Side by Side (Imagem e Texto) */
+.layout-side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.layout-side-by-side.reverse {
+  direction: rtl; /* Inverte a ordem no grid */
+}
+
+.layout-side-by-side.reverse > * {
+  direction: ltr; /* Volta o texto ao normal */
+}
+
+/* Gallery */
+.layout-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* --- RODAPÉ --- */
+.project-footer {
+  margin-top: 10rem;
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.6;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1000px) {
+  .project-detail-page { padding: 2rem; }
+  .meta-grid, .layout-side-by-side { grid-template-columns: 1fr; gap: 3rem; }
+  .layout-side-by-side.reverse { direction: ltr; }
+  .dynamic-sections { gap: 5rem; }
+}
