@@ -5,7 +5,7 @@ export const MY_PROJECTS: Project[] = [
   {
     slug: 'aqualy',
     title: 'Aqualy',
-    shortDescription: 'Sistema IoT com IA para gestão hídrica (1º Lugar Hackathon UNITINS 2025).',
+    shortDescription: 'App de Gestão Hídrica (1º Lugar Hackathon UNITINS 2025)',
     cardImageUrl: '/images/projects/aqualy/card.jpeg',
     heroImageUrl: '/images/projects/aqualy/hero.jpeg',
     date: '2025',
@@ -17,7 +17,7 @@ export const MY_PROJECTS: Project[] = [
         type: 'text-right-image-left',
         title: 'Integração Hardware e IoT',
         content: 'O núcleo do projeto utiliza um sensor de vazão YF-S201 conectado a uma placa ESP32. O sistema coleta dados de fluxo de água em tempo real e os transmite via protocolo WebSocket para um backend robusto, garantindo baixa latência no monitoramento.',
-        imageUrl: 'https://placehold.co/600x600/f7f7f8/a1a1aa?text=ESP32+Setup'
+        imageUrl: 'images/projects/aqualy/arquitetura.png'
       },
       {
         type: 'text-only',
@@ -34,35 +34,7 @@ export const MY_PROJECTS: Project[] = [
       }
     ]
   },
-  {
-    slug: 'sensor-vazao-inteligente',
-    title: 'Sensor de Vazão',
-    shortDescription: 'Solução IoT com IA para monitoramento de água (1º Lugar Hackathon).',
-    cardImageUrl: 'https://placehold.co/400x300/e5e7eb/a1a1aa?text=IoT+Device',
-    heroImageUrl: 'https://placehold.co/1200x600/e5e7eb/a1a1aa?text=Foto+Gigante+do+Projeto',
-    date: '2025',
-    roles: ['Product Design', 'Hardware', 'Backend'],
-    technologies: ['ESP32', 'Quarkus', 'Java', 'Gemini AI', 'Flutter'],
-    heroDescription: 'O projeto vencedor do Hackathon UNITINS (1º Lugar) transforma o monitoramento do consumo de água. Em vez de relatórios mensais passivos, o sensor YF-S201 conectado ao ESP32 acompanha o fluxo em tempo real. O resultado é um ritmo gentil de conscientização diária que ajuda famílias e empresas a economizar, aliando sustentabilidade à inteligência artificial.',
-    sections: [
-      {
-        type: 'text-right-image-left',
-        title: 'Hardware e IoT',
-        content: 'Desenvolvemos um dispositivo compacto utilizando um ESP32 e um sensor de fluxo YF-S201. O dispositivo não apenas coleta os pulsos de água, mas os converte em litros por minuto e transmite via WebSocket para o nosso servidor central de forma contínua.',
-        imageUrl: 'https://placehold.co/600x600/f7f7f8/a1a1aa?text=Detalhe+Hardware'
-      },
-      {
-        type: 'image-full',
-        imageUrl: 'https://placehold.co/1200x500/f7f7f8/a1a1aa?text=Dashboard+App'
-      },
-      {
-        type: 'text-only',
-        title: 'Inteligência Artificial (Gemini)',
-        content: 'No frontend desenvolvido em Flutter, integramos um agente de IA. Usando a API do Google Gemini, a IA fornece sugestões e lembretes inteligentes conforme o ambiente e os dados de vazão coletados, atuando na prevenção de desperdícios.'
-      }
-    ]
-  },
-
+  
   // 2. O Projeto Full-Stack (Angular + Quarkus)
   {
     slug: 'webservice-fullstack-academico',
