@@ -10,7 +10,7 @@
 }
 
 .massive-title {
-  font-size: clamp(8rem, 20vw, 16rem); /* Responsivo e GIGANTE */
+  font-size: clamp(10rem, 16vw, 12rem); /* Responsivo e GIGANTE */
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -85,6 +85,7 @@
 
 .full-width-image {
   width: 100%;
+  max-height: 50rem;
   height: auto;
   border-radius: 24px; /* O cantinho arredondado igual a referência */
   display: block;
@@ -129,7 +130,7 @@
 /* Side by Side (Imagem e Texto) */
 .layout-side-by-side {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.8fr;
   gap: 6rem;
   align-items: center;
 }

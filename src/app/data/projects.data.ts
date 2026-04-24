@@ -35,62 +35,74 @@ export const MY_PROJECTS: Project[] = [
     ]
   },
   
-  // 2. O Projeto Full-Stack (Angular + Quarkus)
+  // 2. O Projeto EcoAventura (Game Educacional)
   {
-    slug: 'webservice-fullstack-academico',
-    title: 'Webservice Full-Stack',
-    shortDescription: 'Desenvolvimento de API RESTful segura com Quarkus e cliente Angular.',
-    cardImageUrl: 'https://placehold.co/400x300/e5e7eb/a1a1aa?text=API+Rest',
-    heroImageUrl: 'https://placehold.co/1200x600/e5e7eb/a1a1aa?text=Webservice+Dashboard',
-    date: '2024',
-    roles: ['Backend', 'Frontend', 'Testing'],
-    technologies: ['Java', 'Quarkus', 'Angular', 'REST', 'JUnit'],
-    heroDescription: 'Um projeto acadêmico completo que exigiu uma visão ponta a ponta do desenvolvimento de software. O objetivo foi criar uma API robusta, segura e de alta performance no backend, e posteriormente dar vida a esses dados construindo uma interface gráfica intuitiva no frontend.',
+    slug: 'ecoaventura',
+    title: 'EcoAventura',
+    shortDescription: 'Jogo de plataforma 2D educativo para promover a sustentabilidade',
+    cardImageUrl: 'images/projects/ecoaventura/card.png',
+    heroImageUrl: 'images/projects/ecoaventura/homepage.png',
+    date: '2024 - 2025',
+    roles: ['Game Developer', 'Game Design', 'UI/UX'],
+    technologies: ['Unity', 'C#', 'Gamificação', 'Educação Ambiental'],
+    heroDescription: 'O EcoAventura é um jogo de plataforma 2D concebido para transformar o ensino da sustentabilidade em uma experiência lúdica e interativa para alunos do ensino fundamental. Através da gamificação, o projeto busca aumentar o engajamento e a retenção de conteúdos sobre coleta seletiva e práticas ecológicas.',
     sections: [
       {
         type: 'text-left-image-right',
-        title: 'Backend com Quarkus (Java)',
-        content: 'Fui responsável por implementar as funcionalidades RESTful do webservice utilizando o framework Quarkus. Para garantir a confiabilidade do sistema e a qualidade das entregas, apliquei práticas rigorosas de desenvolvimento e criei uma suíte de testes unitários com JUnit.',
-        imageUrl: 'https://placehold.co/600x600/f7f7f8/a1a1aa?text=Code+Snippet+Quarkus'
+        title: 'Aprendizado Lúdico e Interativo',
+        content: 'O núcleo do EcoAventura integra mecânicas de plataforma com um sistema de quiz dinâmico. O jogador controla um avatar que deve coletar diferentes tipos de resíduos (recicláveis, orgânicos e eletrônicos), enfrentando desafios que reforçam o aprendizado pedagógico de maneira autônoma e divertida.',
+        imageUrl: 'images/projects/ecoaventura/ingame.png'
       },
       {
+        type: 'text-right-image-left',
+        title: 'Desenvolvimento e Engenharia de Jogos',
+        content: 'Desenvolvido na engine Unity, o projeto envolveu desde o design de sprites e mecânicas de física até a integração de um banco de dados para o gerenciamento de perguntas e rankings. O foco foi criar um equilíbrio preciso entre o entretenimento e o rigor pedagógico, garantindo uma interface intuitiva para o público-alvo.',
+        imageUrl: 'images/projects/ecoaventura/gameover.png'
+      },
+      
+      {
         type: 'text-only',
-        title: 'O Frontend em Angular',
-        content: 'Em uma segunda fase do projeto, fui designado para consumir a API que havia criado. Desenvolvi o cliente web utilizando Angular (v6), focando em garantir que todas as funcionalidades do backend fossem acessíveis através de uma interface gráfica amigável e altamente responsiva.'
+        title: 'Impacto e Validação na Comunidade',
+        content: 'Além do desenvolvimento técnico, o projeto foi validado através de testes de usabilidade com estudantes e apresentado no evento Tech Inclusão. O feedback positivo dos usuários confirmou o potencial da tecnologia como ferramenta de transformação educacional e social, promovendo a autonomia no processo de aprendizagem.'
       },
       {
         type: 'gallery',
         galleryUrls: [
-          'https://placehold.co/400x400/e5e7eb/a1a1aa?text=Tela+Login',
-          'https://placehold.co/400x400/e5e7eb/a1a1aa?text=Dashboard+Angular',
-          'https://placehold.co/400x400/e5e7eb/a1a1aa?text=Swagger+UI'
+          '/images/projects/ecoaventura/ranking.png',
+          '/images/projects/ecoaventura/sobre.png',
         ]
-      }
+      },
     ]
   },
 
   // 3. O Projeto de DevOps e Cloud
   {
-    slug: 'infraestrutura-devops-cicd',
-    title: 'Cenário DevOps & CI/CD',
-    shortDescription: 'Implementação de ambiente de produção automatizado com Docker e Ansible.',
-    cardImageUrl: 'https://placehold.co/400x300/e5e7eb/a1a1aa?text=DevOps+Cloud',
-    heroImageUrl: 'https://placehold.co/1200x600/e5e7eb/a1a1aa?text=Arquitetura+de+Rede',
+    slug: 'ansible-docker',
+    title: 'Automação com Ansible e Docker',
+    shortDescription: 'Automação de infraestrutura (IaC) para provisionamento e gestão de containers em escala.',
+    cardImageUrl: 'images/projects/ansible-docker/card2.jpg',
+    heroImageUrl: 'images/projects/ansible-docker/card2.jpg',
     date: '2025',
-    roles: ['DevOps', 'Cloud', 'Automation'],
-    technologies: ['Docker', 'Ansible', 'GitHub', 'Linode', 'TypeScript'],
-    heroDescription: 'Neste projeto prático na universidade, saí do papel de desenvolvedor de código e assumi a responsabilidade pela infraestrutura. O desafio era desenhar e implementar um cenário de produção real, garantindo que o software fluísse do repositório até o servidor final de forma automatizada e segura.',
+    roles: ['DevOps', 'Infrastructure as Code', 'Automação'],
+    technologies: ['Ansible', 'Docker', 'Linux', 'Nginx'],
+    heroDescription: 'Este projeto demonstra o poder da Automação de Infraestrutura ao gerenciar o ciclo de vida completo de containers em servidores remotos. Utilizando o Ansible, transformei processos complexos de configuração e deploy em playbooks simples, reutilizáveis e totalmente automatizados.',
     sections: [
       {
         type: 'text-right-image-left',
-        title: 'Automação e Containers',
-        content: 'Configurei servidores em nuvem utilizando máquinas virtuais hospedadas na Linode. Para garantir que os ambientes de desenvolvimento e produção fossem idênticos, encapsulei as aplicações Java e TypeScript em containers Docker.',
-        imageUrl: 'https://placehold.co/600x600/f7f7f8/a1a1aa?text=Terminal+Docker'
+        title: 'Ambiente "Agentless" e Escalável',
+        content: 'Aproveitando a arquitetura sem agentes do Ansible, configurei um fluxo que prepara servidores Ubuntu do zero via SSH. O projeto abrange desde a instalação automatizada do Docker Engine até a configuração de repositórios oficiais, garantindo que o servidor alvo esteja sempre em conformidade com o estado desejado (Idempotência).',
+        imageUrl: 'images/projects/ansible-docker/arquiteturarobusta.png'
+      },
+      {
+        type: 'text-left-image-right',
+        title: 'Escalabilidade na Prática',
+        content: 'O núcleo da solução é a orquestração de 8 containers Nginx simultâneos. Cada instância é provisionada com portas dedicadas (8081-8088) e páginas HTML personalizadas de forma dinâmica. Isso prova como a automação permite escalar serviços web de forma padronizada e sem qualquer intervenção manual no servidor alvo.',
+        imageUrl: 'images/projects/ansible-docker/escalation2.webp'
       },
       {
         type: 'text-only',
-        title: 'Esteira de CI/CD',
-        content: 'O coração do projeto foi a automação. Utilizando o GitHub para versionamento e o Ansible como ferramenta de gerência de configuração, criei pipelines que controlavam o desenvolvimento, a manutenção e o deploy contínuo, reduzindo a zero a necessidade de intervenção manual no servidor.'
+        title: 'Observabilidade e Gestão de Ciclo de Vida',
+        content: 'Além do deploy, implementei uma suíte de gerenciamento que permite monitorar estatísticas de CPU/Memória, consultar logs em tempo real e controlar o estado de cada container (pausar, parar ou remover) diretamente da máquina controladora. Isso oferece um controle granular sobre o ambiente de produção, reduzindo drasticamente o tempo de manutenção operacional.'
       }
     ]
   },
